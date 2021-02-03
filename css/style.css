@@ -1,0 +1,374 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-gray: #283136;
+  --light-gray: #EEEEEE;
+  --gray: #E1E1E1;
+  --dark-gray: #4D4D4D;
+  --special-gray: #666666;
+  --map-gray: #f5f2f2;
+  --footer-gray: #444444;
+  --light-red: #FB565A;
+  --medium-red: #E74246;
+  --dark-red: #D7373B;
+  --light-green: #00CA74;
+  --medium-green: #00BC6C;
+  --dark-green: #00AA62;
+  --light-yellow: #EFC849;
+  --medium-yellow: #EAB534;
+  --dark-yellow: #E5A722;
+  --basic-white: #ffffff;
+  --input-gray: #D7DCDE;
+  --input-hover-gray: #B4B9BB;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--basic-gray);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header-logo:hover {
+  opacity: 70%;
+}
+
+.main-header-logo:focus {
+  opacity: 30%;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  width: auto;
+  height: 545px;
+  background-color: var(--light-gray);
+}
+
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-current a:not([href]) {
+  background-color: var(--light-gray);
+}
+
+/* User navigation */
+
+
+.site-navigation a,
+.cart-link {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.cart-link:hover {
+  color: var(--light-red);
+}
+
+.site-navigation a:focus,
+.cart-link:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--light-red);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--medium-red);
+}
+
+.button:focus {
+  background-color: var(--dark-red);
+}
+
+.button:focus span {
+  opacity: 0.3;
+}
+
+/*Slider*/
+
+.container h1 {
+  visibility: hidden;;
+}
+
+.slider h2 {
+  visibility: hidden;
+}
+
+.slider-box-header {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.slider-button {} /*прописать размеры*/
+
+/*Services*/
+
+.services h2 {
+  visibility: hidden;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.services-button-sites {} /*прописать размеры*/
+
+.services-button-apps {
+  background-color: var(--light-green);
+}
+
+.services-button-apps:hover {
+  background-color: var(--medium-green);
+}
+
+.services-button-apps:focus {
+  background-color: var(--dark-green);
+}
+
+.services-button-presentations {
+  background-color: var(--light-yellow);
+}
+
+.services-button-presentations:hover {
+  background-color: var(--medium-yellow);
+}
+
+.services-button-presentations:focus{
+  background-color: var(--dark-yellow);
+}
+
+
+/*About us*/
+
+.about h2 {
+  visibility: hidden;
+}
+
+.about-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: var(--basic-black);
+}
+
+.about-info {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-data {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.about-table-row-one {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.about-table-row-one sup {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/*Partners*/
+
+.partners-list {
+  list-style: none;
+}
+
+.partners-item:hover {
+  stroke: var(--basic-black);
+  fill: var(--basic-black);
+} /*не получается настроить*/
+
+.partners-item:focus {
+  stroke: var(--basic-black);
+  fill-opacity: 0.2;
+} /*не получается настроить*/
+
+/* Main-footer */
+
+.main-footer {
+  color: var(--basic-black);
+}
+
+.footer-contacts {
+  background-color: var(--basic-white);
+}
+
+.footer-contacts h2 {
+  visibility: hidden;
+}
+
+.footer-map {
+  background-color: var(--map-gray);
+}
+
+.footer-contacts-box h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.footer-address,
+.footer-phone {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-gray);
+}
+
+.footer-social h2 {
+ visibility: hidden;
+}
+
+.footer-social-box strong {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social p {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--footer-gray);
+}
+
+/* Social button */
+
+.social-button {
+  color: var(--basic-white);
+  background: linear-gradient(0deg, var(--gray), var(--gray)), var(--basic-white);
+}
+
+.social-button:hover {
+  background: linear-gradient(0deg, var(--medium-red), var(--medium-red)), var(--basic-white);
+}
+
+.social-button:focus {
+  background: linear-gradient(0deg, var(--dark-red), var(--dark-red)), var(--basic-white);
+}
+
+/* Modal */
+
+.modal {
+  color: var(--footer-gray);
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal-feedback h2 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--basic-black);
+}
+
+.modal-part-one label,
+.modal-part-two label {
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.modal-part-one input,
+.modal-part-two textarea {
+  background: var(--basic-white);
+  border: 2px solid var(--input-gray);
+  border-radius: 3px;
+  opacity: 0.5;
+  color: var(--footer-gray);
+}
+
+.modal-part-one input:hover,
+.modal-part-two textarea:hover {
+  border-color: var(--input-hover-gray);
+}
+
+.modal-part-one input:focus,
+.modal-part-two textarea:focus {
+  color: var(--footer-gray);
+  border: 2px solid var(--basic-black);
+
+}
+
+.modal-part-one input:invalid,
+.modal-part-two textarea:invalid {
+  color: var(--medium-red);
+  border: 2px solid var(--medium-red);
+}
+
+.button-close {
+  opacity: 0.3;
+}
+
+.button-close:hover {
+  background-color: var(--light-red);
+}
+
+.button-close:focus {
+  background-color: var(--light-red);
+  opacity: 0.1;
+}
+
