@@ -23,59 +23,69 @@
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="blank.html">Контакты</a></li>
     </ul>
-    <a class="cart-link" href="blank.html">Корзина</a>
+    <a class="cart-link" href="blank.html">
+      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="#A6A6A6"/>
+        <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="#A6A6A6"/>
+        <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6"/>
+      </svg>
+      <span>Корзина</span>
+    </a>
   </nav>
   </header>
   <main>
     <h1>Дизайн-студия Нёрдс</h1>
 
   </main>
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="footer-contacts">
       <h2>Как нас найти</h2>
       <div>
-        <img src="img/map-and-marker.jpg" width="1440" height="416" alt="Карта">
+        <img class="footer-map" src="img/map-and-marker.jpg" width="1440" height="416" alt="Карта">
       </div>
-      <h3>Nёrds design studio</h3>
-      <p><a href="blank.html">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</a></p>
-      <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-      <button type="button">Напишите нам</button>
+      <div class="footer-contacts-box">
+        <h3>Nёrds design studio</h3>
+        <p><a class="footer-address" href="blank.html">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</a></p>
+        <p><a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+        <button class="button footer-button" type="button">Напишите нам</button>
+      </div>
     </section>
-    <section>
+    <section class="footer-social">
       <h2>Мы в соцсетях</h2>
-      <div>
+      <div class="footer-social-box">
         <strong>Давайте дружить, это выгодно!</strong>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
       <ul>
         <li>
-          <a href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Логотип Вконтакте">Вконтакте</a>
+          <a class="social-button" href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Логотип Вконтакте">Вконтакте</a>
         </li>
         <li>
-          <a href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Логотип Facebook">Фейсбук</a>
+          <a class="social-button" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Логотип Facebook">Фейсбук</a>
         </li>
         <li>
-          <a href="#"><img src="img/insta-icon.png" width="21" height="21" alt="Логотип Instagram">Инстаграм</a>
+          <a class="social-button" href="#"><img src="img/insta-icon.png" width="21" height="21" alt="Логотип Instagram">Инстаграм</a>
         </li>
       </ul>
     </section>
   </footer>
-  <section>
+  <section class="modal-feedback">
     <h2>Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="modal-part-one">
         <label for="feedback-name">Ваше имя:</label>
         <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
         <label for="feedback-email">Ваш email:</label>
         <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
       </p>
-      <p>
+      <p class="modal-part-two">
         <label for="feedback-message">Текст письма:</label>
         <textarea id="feedback-message" rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="submit">Отправить</button>
+      <button class="button button-feedback" type="submit">Отправить</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="button button-close" type="button">Закрыть</button>
   </section>
   </body>
 </html>
+

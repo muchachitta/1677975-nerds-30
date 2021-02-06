@@ -9,6 +9,9 @@
   --special-gray: #666666;
   --map-gray: #f5f2f2;
   --footer-gray: #444444;
+  --button-gray: #DFDFDF;
+  --focus-gray: #D5D5D5;
+  --filter-two-current: #231F20;
   --light-red: #FB565A;
   --medium-red: #E74246;
   --dark-red: #D7373B;
@@ -40,6 +43,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -75,8 +79,12 @@ img {
   background-color: var(--light-gray);
 }
 
-/* User navigation */
+.inner-page .main-navigation {
+  background-color: var(--light-gray);
+  height: 355px;
+}
 
+/* User navigation */
 
 .site-navigation a,
 .cart-link {
@@ -121,11 +129,11 @@ img {
   opacity: 0.3;
 }
 
-/*Slider*/
-
-.container h1 {
-  visibility: hidden;;
+.index-header {
+  visibility: hidden;
 }
+
+/*Slider*/
 
 .slider h2 {
   visibility: hidden;
@@ -137,8 +145,6 @@ img {
   font-weight: 500;
   color: var(--basic-black);
 }
-
-.slider-button {} /*прописать размеры*/
 
 /*Services*/
 
@@ -157,8 +163,6 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
 }
-
-.services-button-sites {} /*прописать размеры*/
 
 .services-button-apps {
   background-color: var(--light-green);
@@ -240,6 +244,183 @@ img {
   stroke: var(--basic-black);
   fill-opacity: 0.2;
 } /*не получается настроить*/
+
+/*Catalog-page*/
+
+.inner-page {
+  font-size: 16px;
+  color: var(--basic-gray);
+}
+
+.page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+/*Filter*/
+
+.filters h2 {
+  visibility: hidden;
+}
+
+.filter-type {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter-price input {
+  background-color: var(--light-gray);
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter ul {
+  line-height: 20px;
+}
+
+.filter-input-radio:hover + label,
+.filter-input-radio:focus + label {
+  color: var(--basic-gray);
+}
+
+.filter-input-radio:disabled + label {
+  opacity: 0.3;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-gray);
+}
+
+.filter-input-checkbox:disabled + label {
+  opacity: 0.3;
+}
+
+.filter-button {
+  color: var(--basic-black);
+  background-color: var(--light-gray);
+}
+
+.filter-button:hover {
+  background-color: var(--button-gray);
+}
+
+.filter-button:focus {
+  background-color: var(--focus-gray);
+}
+
+.filter-button:focus span {
+  opacity: 0.3;
+}
+
+/*Sorting*/
+
+.catalog-filter-one a,
+.catalog-filter-two a {
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.catalog-filter-one a:hover,
+.catalog-filter-two a:hover {
+  opacity: 0.6;
+}
+
+.catalog-filter-one a:focus:active,
+.catalog-filter-two a:focus:active {
+  opacity: 1;
+}
+
+.filter-one-current {
+  color: var(--basic-black);
+}
+
+.filter-two-current {
+  color: var(--filter-two-current);
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--light-gray);
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pagination-item a:hover {
+  background-color: var(--button-gray);
+}
+
+.pagination-item a:focus {
+  background-color: var(--focus-gray);
+}
+
+.pagination-item a:focus span {
+  opacity: 0.3;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:focus span,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: rgba(0, 0, 0, 0.0001);
+}
+
+/* Catalog */
+
+.catalog h2 {
+  visibility: hidden;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: var(--basic-white);
+  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  border-radius: 5px;
+}
+
+.catalog-item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-item-title:hover {
+  color: var(--light-red);
+}
+
+.catalog-item-title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-description {
+  line-height: 18px;
+  color: var(--special-gray);
+  text-align: center;
+}
 
 /* Main-footer */
 
