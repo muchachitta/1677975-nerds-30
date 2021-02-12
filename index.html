@@ -14,60 +14,67 @@
   <body class="page-body">
   <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo">
-      <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Дизайн-студии Нёрдс">
-    </a>
-    <ul class="site-navigation">
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-    </ul>
-    <a class="cart-link" href="blank.html">
-      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="#A6A6A6"/>
-        <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="#A6A6A6"/>
-        <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6"/>
-      </svg>
-      <span>Корзина</span>
-    </a>
+    <div class="main-navigation-wrapper">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Дизайн-студии Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <div class="user-navigation">
+        <a class="cart-link" href="blank.html">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="#A6A6A6"/>
+            <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="#A6A6A6"/>
+            <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6"/>
+          </svg>
+          <span>Корзина</span>
+        </a>
+      </div>
+    </div>
   </nav>
   </header>
   <main class="container">
     <h1 class="index-header">Дизайн-студия Нёрдс</h1>
-    <section class="slider">
-      <h2>Карусель слайдов</h2>
-      <div class="slider-box">
-        <div class="slider-box-left">
-          <p class="slider-box-header">Долго, дорого, <br>скрупулезно.</p>
-          <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-          <a class="button slider-button" href="blank.html"><span>Узнать больше</span></a>
+    <div class="slider-wrapper">
+      <section class="slider">
+        <h2>Карусель слайдов</h2>
+        <div class="slider-box">
+          <div class="slider-box-left">
+            <p class="slider-box-header">Долго, дорого, <br>скрупулезно.</p>
+            <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+            <a class="button slider-button" href="blank.html"><span>Узнать больше</span></a>
+          </div>
+          <div class="slider-box-right">
+            <img src="img/slider/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
+          </div>
         </div>
-        <div class="slider-box-right">
-          <img src="img/slider/nerds-index-slide1.jpg" width="760" height="431" alt="Слайд 1">
+        <div class="slider-box">
+          <div class="slider-box-left">
+            <p class="slider-box-header">Любим математику <br>как никто другой</p>
+            <p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций</p>
+            <a class="button slider-button" href="blank.html"><span>Узнать больше</span></a>
+          </div>
+          <div class="slider-box-right">
+            <img src="img/slider/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
+          </div>
         </div>
-      </div>
-      <div class="slider-box">
-        <div class="slider-box-left">
-          <p class="slider-box-header">Любим математику <br>как никто другой</p>
-          <p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций</p>
-          <a class="button slider-button" href="blank.html"><span>Узнать больше</span></a>
+        <div class="slider-box">
+          <div class="slider-box-left">
+            <p class="slider-box-header">Только ночь, <br>только хардкор</p>
+            <p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+            <a class="button slider-button" href="blank.html"><span>Узнать больше</span></a>
+          </div>
+          <div class="slider-box-right">
+            <img src="img/slider/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
+          </div>
         </div>
-        <div class="slider-box-right">
-          <img src="img/slider/nerds-index-slide2.jpg" width="760" height="431" alt="Слайд 2">
-        </div>
-      </div>
-      <div class="slider-box">
-        <div class="slider-box-left">
-          <p class="slider-box-header">Только ночь, <br>только хардкор</p>
-          <p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
-          <a class="button slider-button" href="blank.html"><span>Узнать больше</span></a>
-        </div>
-        <div class="slider-box-right">
-          <img src="img/slider/nerds-index-slide3.jpg" width="760" height="431" alt="Слайд 3">
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
     <section class="services">
       <h2>Наши услуги</h2>
       <ul class="services-list">
@@ -167,17 +174,19 @@
         <strong>Давайте дружить, это выгодно!</strong>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-      <ul>
-        <li>
-          <a class="social-button" href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Логотип Вконтакте">Вконтакте</a>
-        </li>
-        <li>
-          <a class="social-button" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Логотип Facebook">Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-button" href="#"><img src="img/insta-icon.png" width="21" height="21" alt="Логотип Instagram">Инстаграм</a>
-        </li>
-      </ul>
+      <div class="footer-social-icons">
+        <ul>
+          <li>
+            <a class="social-button" href="#"><img src="img/vk-icon.png" width="26" height="15" alt="Логотип Вконтакте">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><img src="img/fb-icon.png" width="12" height="22" alt="Логотип Facebook">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><img src="img/insta-icon.png" width="21" height="21" alt="Логотип Instagram">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
     </section>
   </footer>
   <section class="modal-feedback">
