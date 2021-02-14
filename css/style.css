@@ -544,11 +544,12 @@ img {
 .main-footer {
   color: var(--basic-black);
   margin-top: 80px;
-  justify-self: center;
+
 }
 
 .footer-contacts {
-  background-color: var(--basic-white);
+  min-height: 416px;
+  justify-self: center;
 }
 
 .footer-contacts h2 {
@@ -557,7 +558,7 @@ img {
 
 .footer-map {
   background-color: var(--map-gray);
-  width: 1440px;
+  width: 100%;
 }
 
 .footer-contacts-box h3 {
@@ -577,7 +578,8 @@ img {
 .footer-social {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 217px;
+  min-height: 217px;
+  justify-self: center;
 }
 
 .footer-social h2 {
