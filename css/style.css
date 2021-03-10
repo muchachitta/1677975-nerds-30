@@ -114,6 +114,7 @@ img {
   padding-top: 17px;
   padding-bottom: 15px;
   cursor: pointer;
+  outline: none;
 }
 
 .button:hover,
@@ -1234,9 +1235,16 @@ img {
 /* Modal */
 
 .modal-feedback {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  bottom: 180px;
+  top: auto;
   width: 960px;
   height: 590px;
-  left: 240px;
   color: var(--footer-gray);
   font-size: 16px;
   line-height: 18px;
@@ -1328,16 +1336,26 @@ img {
 }
 
 .button-close {
+  display: inline-block;
+  position: absolute;
+  top: 78px;
+  right: 100px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-image: url("../img/close-cross.png");
+  background-color: transparent;
+  cursor: pointer;
   opacity: 0.3;
+  outline: none;
 }
 
 .button-close:hover,
 .button-close:focus {
-  background-color: var(--light-red);
+  opacity: 1;
 }
 
 .button-close:active {
-  background-color: var(--light-red);
   opacity: 0.1;
 }
 
