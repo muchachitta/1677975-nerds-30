@@ -7,7 +7,7 @@
   --gray: #E1E1E1;
   --dark-gray: #4D4D4D;
   --special-gray: #666666;
-  --slider-current-gray: ##C1C1C1;
+  --slider-current-gray: #C1C1C1;
   --map-gray: #f5f2f2;
   --footer-gray: #444444;
   --button-gray: #DFDFDF;
@@ -666,8 +666,8 @@ img {
   position: absolute;
   top: 31px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: 8px solid #ffffff;
   background-color: #ababab;
@@ -750,7 +750,6 @@ img {
 
 .filter-option label {
   position: relative;
-  display: block;
   cursor: pointer;
   user-select: none;
 }
@@ -1026,9 +1025,13 @@ img {
   display: none;
 }
 
-.catalog-item-hovered {
+.catalog-item:hover .catalog-wrap {
   display: block;
 }
+
+/*.catalog-item-hovered {
+  display: block;
+} */
 
 /*Button-price*/
 
@@ -1242,21 +1245,44 @@ img {
   padding: 63px 100px 84px 100px;
 }
 
-.modal-feedback h2 {
+.modal-feedback-title {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
   color: var(--basic-black);
+  margin: 0;
+  margin-bottom: 37px;
 }
 
-.modal-part-one label,
-.modal-part-two label {
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 360px;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.modal-message {
+  width: 760px;
+  margin: 0;
+  margin-bottom: 47px;
+}
+
+.modal-item label {
   font-weight: bold;
   color: var(--basic-black);
+  margin-bottom: 9px;
 }
 
-.modal-part-one input,
-.modal-part-two textarea {
+.modal-item input,
+.modal-message textarea {
   background: var(--basic-white);
   border: 2px solid var(--input-gray);
   border-radius: 3px;
@@ -1266,25 +1292,39 @@ img {
 
 .feedback-input {
   width: 360px;
-  min-height: 50px;
+  height: 50px;
+  padding: 16px 16px;
 }
 
-.modal-part-one input:hover,
-.modal-part-two textarea:hover {
+.modal-message textarea {
+  padding: 16px 16px;
+  width: 760px;
+  height: 118px;
+}
+
+.modal-item input:hover,
+.modal-message textarea:hover {
   border-color: var(--input-hover-gray);
 }
 
-.modal-part-one input:focus,
-.modal-part-two textarea:focus {
+.modal-item input:focus,
+.modal-message textarea:focus {
   color: var(--footer-gray);
   border: 2px solid var(--basic-black);
 
 }
 
-.modal-part-one input:invalid,
-.modal-part-two textarea:invalid {
+.modal-item input:invalid,
+.modal-message textarea:invalid {
   color: var(--medium-red);
   border: 2px solid var(--medium-red);
+}
+
+/*Buttons modal*/
+
+.button-feedback {
+  display: inline-block;
+  padding: 17px 83px 15px 83px;
 }
 
 .button-close {
