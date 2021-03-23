@@ -1333,6 +1333,10 @@ img {
   display: none;
 }
 
+.modal-feedback-show {
+  display: block;
+}
+
 .modal-feedback-title {
   font-weight: bold;
   font-size: 45px;
