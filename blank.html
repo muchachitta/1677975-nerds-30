@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -85,12 +85,12 @@
       </p>
       <p class="modal-item modal-message">
         <label for="feedback-message">Текст письма:</label>
-        <textarea id="feedback-message" rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea>
+        <textarea class="feedback-message-text" id="feedback-message" rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button button-feedback" type="submit">Отправить</button>
     </form>
     <button class=" button-close" type="button" aria-label="Закрыть"></button>
   </section>
-  <script src="js/modal.js"></script>
+  <script src="js/modal-min.js"></script>
   </body>
 </html>
