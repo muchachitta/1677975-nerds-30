@@ -1382,13 +1382,33 @@ img {
   margin-bottom: 9px;
 }
 
-.modal-item input,
-.modal-message textarea {
+.feedback-input,
+.feedback-message-text {
   background: var(--basic-white);
   border: 2px solid var(--input-gray);
   border-radius: 3px;
-  opacity: 0.5;
-  color: var(--footer-gray);
+  color: rgba(68, 68, 68, .5);
+}
+
+.feedback-input:hover,
+.feedback-message-text:hover {
+  border-color: var(--input-hover-gray);
+}
+
+.feedback-input:focus,
+.feedback-message-text:focus {
+  color: rgba(68, 68, 68, 1);
+  border: 2px solid var(--basic-black);
+}
+
+.feedback-input:invalid,
+.feedback-message-text:invalid {
+  color: var(--medium-red);
+  border: 2px solid var(--medium-red);
+}
+
+.feedback-message-text {
+  resize: none;
 }
 
 .feedback-input {
@@ -1403,25 +1423,6 @@ img {
   height: 118px;
 }
 
-.modal-item input:hover,
-.modal-message textarea:hover
-.modal-item input:focus,
-.modal-message textarea:focus {
-  border-color: var(--input-hover-gray);
-}
-
-.modal-item input:focus,
-.modal-message textarea:focus {
-  color: var(--footer-gray);
-  border: 2px solid var(--basic-black);
-
-}
-
-.modal-item input:invalid,
-.modal-message textarea:invalid {
-  color: var(--medium-red);
-  border: 2px solid var(--medium-red);
-}
 
 /*Buttons modal*/
 
